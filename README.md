@@ -1,0 +1,1 @@
+Web Scraler for various uses including image, stock, video scraping.
