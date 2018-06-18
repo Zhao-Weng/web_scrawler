@@ -67,11 +67,6 @@ def getPic (search):
 #        
 #
 
-
-
-
-
-#
 def savePic(url):
     hs = hashlib.sha224(url).hexdigest()
     file_extension = url.split(".")[-1]
@@ -80,18 +75,12 @@ def savePic(url):
     #uri = "Desktop"      ##nothing means zweng4
     #dest = uri+hs+"."+file_extension
     IMAGE = url.rsplit('/',1)[1]
-
-
     try:
-
-
         f = open(file_name,'wb')
         f.write(requests.get(url).content)
         f.close()
     except:
         print "save failed" 
-
-
 
 def searchPic_wrapper(url):
     for i in range(10):

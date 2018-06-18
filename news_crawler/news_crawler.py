@@ -2,7 +2,7 @@ import mechanize
 import urllib
 from bs4 import BeautifulSoup
 def getHtmlText(url):
-        a = ""
+	a = ""
 	br = mechanize.Browser()    #create an browser opener object. 
 	br.set_handle_robots(False)
 	br.addheaders = [('User-agent','Mozilla')]
